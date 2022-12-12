@@ -178,7 +178,7 @@ server <-
     
     covid_adjusted <-
       reactive({ # specify this as a reactive function
-        if(input$population_adjust) { 
+        if (input$population_adjust) { 
           covid_filtered() %>% 
             left_join(
               population_states,
